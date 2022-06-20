@@ -1,4 +1,4 @@
-<p>developper-component works!</p>
+
 <div>
     <ul>
         <li *ngFor="let developper of developperList">
@@ -6,10 +6,6 @@
             <p>{{developper.age}} ans</p>
             <p>{{developper.sexe}}</p>
             <p>{{developper.bio}}</p>
-            <ul>
-                <li *ngFor="let skill of developper.skills">
-                    <app-skill-component></app-skill-component>
-                </li>
-            </ul>
+            <app-skill-component></app-skill-component>
     </ul>
 </div>
