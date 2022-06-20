@@ -1,0 +1,17 @@
+<p>developper-component works!</p>
+<div>
+    <ul>
+        <li *ngFor="let developper of developperList">
+            <p>{{developper.firstName}} {{developper.lastName}}</p>
+            <p>{{developper.age}} ans</p>
+            <p>{{developper.sexe}}</p>
+            <p>{{developper.bio}}</p>
+            <ul>
+                <li *ngFor="let skill of developper.skills">
+                    <p>{{skill.name}}</p>
+                    <p>{{skill.logo}}</p>
+                    <p>{{skill.site}}</p>
+                </li>
+            </ul>
+    </ul>
+</div>
