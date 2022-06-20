@@ -8,9 +8,7 @@
             <p>{{developper.bio}}</p>
             <ul>
                 <li *ngFor="let skill of developper.skills">
-                    <p>{{skill.name}}</p>
-                    <p>{{skill.logo}}</p>
-                    <p>{{skill.site}}</p>
+                    <app-skill-component></app-skill-component>
                 </li>
             </ul>
     </ul>
