@@ -5,6 +5,8 @@
             <p>{{developper.age}} ans</p>
             <p>{{developper.sexe}}</p>
             <p>{{developper.bio}}</p>
-            <app-skill-component [skills]="developper.skills"></app-skill-component>
+            <app-skill-component 
+            *ngFor="let skill of developper.skills"
+            [skills]="skill"></app-skill-component>
     
 </div>

@@ -9,7 +9,7 @@ import { Skill } from '../models/skills.models';
 })
 export class SkillComponentComponent implements OnInit {
   
-  @Input() skills: Skill[] = [];
+  @Input() skills: Skill = new Skill("","","");
 
   constructor() { }
 
