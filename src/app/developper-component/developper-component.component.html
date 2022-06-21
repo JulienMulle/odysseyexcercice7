@@ -1,11 +1,10 @@
 
 <div>
-    <ul>
-        <li *ngFor="let developper of developperList">
+   
             <p>{{developper.firstName}} {{developper.lastName}}</p>
             <p>{{developper.age}} ans</p>
             <p>{{developper.sexe}}</p>
             <p>{{developper.bio}}</p>
-            <app-skill-component></app-skill-component>
-    </ul>
+            <app-skill-component [skills]="developper.skills"></app-skill-component>
+    
 </div>

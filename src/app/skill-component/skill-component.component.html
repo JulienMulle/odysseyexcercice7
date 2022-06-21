@@ -1,10 +1,9 @@
-
 <div>
     <ul>
-        <li *ngFor="let skill of skillList">
+        <li *ngFor="let skill of skills">
             <p>{{skill.name}}</p>
-            <p>{{skill.logo}}</p>
-            <p>{{skill.site}}</p>
+            <img [src]="skill.logo" alt="skill.name">
+            <a [href]="skill.url">{{skill.url}}</a>  
         </li>
     </ul>
 </div>

@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { skill } from '../models/skills.models';
-import { skillList } from '../mock-skills';
+import { Skill } from '../models/skills.models';
 
 
 @Component({
@@ -10,7 +9,7 @@ import { skillList } from '../mock-skills';
 })
 export class SkillComponentComponent implements OnInit {
   
-  @Input() skillList = skillList;
+  @Input() skills: Skill[] = [];
 
   constructor() { }
 

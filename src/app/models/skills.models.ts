@@ -1,10 +1,7 @@
-export class skill {
-    name: string;
-    logo: string;
-    site: string;
-    constructor(name: string, logo: string, site: string) {
-        this.name = name;
-        this.logo = logo;
-        this.site = site;
-    }
+export class Skill {
+    constructor(
+        public name: string,
+        public logo: string,
+        public url: string) 
+        {}
 }
